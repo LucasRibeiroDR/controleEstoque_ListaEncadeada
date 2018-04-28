@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1524944048 source:f:\faculdade\estrutura de dados\2018\controleestoquelistasimplesmenteencadeada\controleestoquelistasimplesmenteencadeada.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"controleEstoqueListaSimplesmenteEncadeada.h"
+	<locale.h>
+	<conio.h>
+	<string.h>
+	<strings.h>
+
+1524944008 f:\faculdade\estrutura de dados\2018\controleestoquelistasimplesmenteencadeada\controleestoquelistasimplesmenteencadeada.h
+
+1524780412 source:f:\faculdade\estrutura de dados\2018\controleestoquelistasimplesmenteencadeada\main.c
+	<stdio.h>
+	<stdlib.h>
+	"controleEstoqueListaSimplesmenteEncadeada.h"
+	<locale.h>
+	<conio.h>
+	<string.h>
+	<strings.h>
+
+1524779764 source:e:\faculdade\estrutura de dados\2018\controleestoquelistasimplesmenteencadeada\controleestoquelistasimplesmenteencadeada.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"controleEstoqueListaSimplesmenteEncadeada.h"
+	<locale.h>
+	<conio.h>
+	<string.h>
+	<strings.h>
+
+1524775628 e:\faculdade\estrutura de dados\2018\controleestoquelistasimplesmenteencadeada\controleestoquelistasimplesmenteencadeada.h
+
+1524774748 source:e:\faculdade\estrutura de dados\2018\controleestoquelistasimplesmenteencadeada\main.c
+	<stdio.h>
+	<stdlib.h>
+	"controleEstoqueListaSimplesmenteEncadeada.h"
+	<locale.h>
+	<conio.h>
+	<string.h>
+	<strings.h>
+
