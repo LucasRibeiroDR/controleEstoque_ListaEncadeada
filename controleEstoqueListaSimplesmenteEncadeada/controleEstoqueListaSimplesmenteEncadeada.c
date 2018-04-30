@@ -59,7 +59,7 @@ Programa: Controle de Estoque de Whisky (básico):
 void inicializarLista(LISTA *l){
     l->inicio = NULL;
 }
-
+/*
 void inserir_elemento(LISTA *l, REGISTRO reg){
     setlocale(LC_ALL, "Portuguese");
     PONT novo = NULL;
@@ -72,7 +72,7 @@ void inserir_elemento(LISTA *l, REGISTRO reg){
     novo->prox = NULL; // deixa o prox NULL para não ter lixo na memoria
     novo->prox = l->inicio;
     l->inicio = novo;
-}
+}*/
 
 void inserir_elemento_ordenado(LISTA *l, REGISTRO reg){
      setlocale(LC_ALL, "Portuguese");
@@ -110,7 +110,8 @@ void imprimir(LISTA *l){
         printf("\n\nDados do Whisky\n\n");
 
         printf("Nome: %s \n", aux->reg.nome);
-        printf("Preço de venda: %f \n", aux->reg.precoDeVenda);
+        printf("ID (chave): %i \n", aux->reg.chave);
+        printf("Preço de venda: R$ %.2f \n", aux->reg.precoDeVenda);
         printf("Idade: %i \n", aux->reg.idade);
         printf("País: %s \n", aux->reg.pais);
         printf("Código do produto: %s \n", aux->reg.codigoDoProduto);
@@ -144,7 +145,7 @@ int excluir_elemento(LISTA *l, TIPOCHAVE ch){
     }
 
     if(atual == NULL){
-        printf("\nNao houve exclusao");
+        printf("\nERRO! Valor digitado inválido!");
     }
     else{
         if(ant == NULL){
@@ -154,6 +155,7 @@ int excluir_elemento(LISTA *l, TIPOCHAVE ch){
             ant->prox = atual->prox;
         }
         free(atual);
+        printf("\nExclusão feita com sucesso!");
     }
 }
 

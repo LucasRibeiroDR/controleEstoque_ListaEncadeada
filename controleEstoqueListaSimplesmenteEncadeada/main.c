@@ -6,6 +6,9 @@
 #include <string.h>
 #include <strings.h>
 
+///a fazer: ordenação, mensagens de confirmação
+
+
 int main()
 {
     setlocale(LC_ALL, "Portuguese");
@@ -27,6 +30,7 @@ int main()
         }
 
         if(opcaoMenu==1){
+            system("cls");
             inicializarLista(&lista);
             printf("\n\nLista inicializada!\n\n");
         }
@@ -63,21 +67,31 @@ int main()
             inserir_elemento_ordenado(&lista, reg);
         }
         if(opcaoMenu==3){
+            system("cls");
             reinicializar(&lista);
             printf("\n\nLista reinicializada!\n\n");
         }
         if(opcaoMenu==4){
-
+            system("cls");
+            printf("Busca de whisky(s)\n\n")
+            TIPOCHAVE chave=0;
+            printf("\nDigite o ID do Whisky: ");
+            scanf("%i",&chave);
+            fflush(stdin);
+            busca_elemento(&lista, chave);
         }
         if(opcaoMenu==5){
+            system("cls");
+            printf("Exclusão de whisky(s)\n\n")
             TIPOCHAVE chave=0;
-            //printf("\nDigite o ID do Whisky: ");
-            //scanf("%i",&chave);
-            //fflush(stdin);
-            //excluir_elemento(%lista, chave);
-            excluir_elemento(%lista, chave);
+            printf("\nDigite o ID do Whisky: ");
+            scanf("%i",&chave);
+            fflush(stdin);
+            excluir_elemento(&lista, chave);
         }
         if(opcaoMenu==6){
+            system("cls");
+            printf("Lista de produtos\n\n")
             imprimir(&lista);
         }
         if(opcaoMenu==7){
